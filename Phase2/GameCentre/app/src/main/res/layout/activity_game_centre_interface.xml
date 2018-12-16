@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="fall2018.csc2017.GameCentre.gameCentre.GameCentreInterfaceActivity"
+android:id="@+id/drawer_layout"
+    android:background="@drawable/space"
+android:fitsSystemWindows="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="378dp"
+            android:layout_height="583dp"
+            android:layout_margin="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.21">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Available Games"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/SlidingTiles"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="14dp"
+                    android:text="Sliding Tiles" />
+
+                <Button
+                    android:id="@+id/Sudoku"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="14dp"
+                    android:text="Sudoku" />
+
+                <Button
+                    android:id="@+id/PictureMatching"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="14dp"
+                    android:text="Picture Match" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="invisible">-->
+
+    <!--&lt;!&ndash;<include layout="@layout/toolbar_layout" />&ndash;&gt;-->
+<!--</LinearLayout>-->
+<android.support.design.widget.NavigationView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_view"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/nav_header_main"
+    app:menu="@menu/menu_game_centre_interface"
+    >
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
