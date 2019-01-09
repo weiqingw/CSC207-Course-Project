@@ -121,7 +121,7 @@ This project can be tested on Android Virtual Machine through Android Studio, or
 * Picture Match has Autosave function
 
 ## Acknowledgements
-It should be noted that this project is a course group project was completed collaboratively by X. Wang, Y. Xu, H. Shen, J. Xiang and myself, and contributions
+It should be noted that this project is a course group project completed collaboratively by X. Wang, Y. Xu, H. Shen, J. Xiang and myself, and contributions
 made by everyone is an important part of the success.
 
 ## Feedback from the Course Instruction Team
